@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    display: block;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+.edit{
+    background-color: transparent;
+    border: 1px dotted #FFB37A;
+    border-radius: 7px;
+    display: block;
+    width: 50%;
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.edit:focus{
+    border: 1px solid #FFB37A;
+    outline-color: #FFB37A;
+}
+.error{
+    border: 1px solid red;
+}
+.small-error{
+    color: red;
+    font-size: 10px;
+}
+.btn-calc{
+    /* padding: 10px; */
+    background-color: #FFB37A;
+    color: black;
+    transition: all , 0.3s;
+}
+.btn-calc:hover{
+    background-color: #fca562;
+}
+
+.button_com {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all,0.3s;
+}
+.button_com:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.back_home{
+    color: black;
+    margin-left: 15px;
+    transition: all , 0.3s;
+}
+.back_home:hover{
+    color: tomato;
+}
+.col-40{
+    width: 40%;
+}
+.w-30{
+    width: 30%;
+}
+.w-70{
+    width: 80%;
+}
+.w-90{
+    width: 90%;
+}
+.container-home {
+    width: 80%;
+}
+
+.hero {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* align-content: baseline; */
+    background-image: url(../img/health-fitness-background-dumbbell-sneakers-measuring-tape-phone-green-K9XABD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-home {
+    padding: 20px;
+    /* gap: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition:  all,0.3s;
+    color: white;
+    margin-bottom: 20px;
+    background-color: #cf1a1ade;
+}
+.card-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.781);
+}
+.common{
+    background: linear-gradient(0deg, #FFFFFF, #FFE5B4, #FFDAB9, #FFB37A);
+    padding: 50px 0;
+}
+.contain{
+    display: flex;
+    gap: 15px;
+    position: relative;
+    z-index: 1;
+}
+.inputs {
+    border-radius: 15px;
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.781);
+}
+
+.img-ibw{
+    height: 70%;
+    width: 28%;
+    background-image: url(../img/ideal-body-weight.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    z-index: 4;
+}
+.img-bmi{
+    height: 40%;
+    width: 28%;
+    background-image: url(../img/body-mass-index.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 3%;
+    right: 0%;
+    z-index: 4;
+}
+.img-calorei{
+    height: 30%;
+    width: 28%;
+    background-image: url(../img/calorei.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    z-index: 4;
+}
+.img-pdd{
+    height: 45%;
+    width: 28%;
+    background-image: url(../img/due-date-pregnancy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    z-index: 4;
+}
+
+
+@media screen and (max-width : 800px){
+    .col-70{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 600px){
+    .hero{
+        height: 120vh;
+    }
+
+    .col-90{
+        width: 90%;
+    }
+}

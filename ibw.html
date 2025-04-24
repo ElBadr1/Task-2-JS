@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Ideal Body Weight</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <!-- Statr IBW -->
+    <section class="idealBodyWeight common">
+      <div class="container w-90">
+        <h1>Calculate Ideal Body Weight</h1>
+        <div class="contain">
+          <div class="row">
+            <div class="inputs">
+              <div class="row">
+                <div class="col-xl-4 col-md-6">
+                  <label class="p-2" for="height">Height</label>
+                  <input type="number" class="edit" id="heightIBW" placeholder="Height (cm)"/>
+                  <small id="small" class="small-error"></small>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                  <label class="p-2" for="gender">Gender</label>
+                  <select class="edit" id="gender">Gender
+                    <!-- <option value=""></option> -->
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-calc my-4 d-block" onclick="calcIBW()">
+                    Calculate</button>
+                    <p id="ibw"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-6">
+                  <div class="explainEQU">
+                    <h4>
+                      The Ideal Body Weight (IBW) can be estimated using different formulas,
+                      but the most commonly used one is the <u class="text-danger">Devine Formula</u>:
+                    </h4>
+                    <h5>Ideal Body Weight (IBW) in kg :</h5>
+                    <p>
+                    <b>Male : </b> IBW = 50 + ( 0.9 × ( height in (cm) - 152))
+                    </p>
+                    <p>
+                    <b>Female : </b> IBW = 45.5 + ( 0.9 × ( height in (cm) - 152))
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="img">
+                <div class="img-ibw"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="index.html" class="back_home">
+           < Back to Home
+        </a>
+      </span>
+    </section>
+    <!-- End IBW -->
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

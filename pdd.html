@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Pregnancy Due Date</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+
+    <!-- Start Pregnancy Due Date : -->
+    <section class="pdd common">
+      <div class="container w-90">
+        <h1>Calculate Pregnancy Due Date</h1>
+        <div class="contain">
+          <div class="row">
+            <div class="inputs">
+              <div class="row">
+                <div class="col-xl-4 col-md-6">
+                  <label class="p-2" for="datePDD">First Day of Last Menstrual Period</label>
+                  <input type="date" class="edit" id="datePDD"/>
+                  <small id="date_error" class="small-error"></small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <button class="btn btn-calc my-4 d-block" onclick="calcDueDate()">
+                    Calculate</button>
+                    <p id="pdd"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-9 col-md-6">
+                  <div class="explainEQU">
+                    <h4>
+                      Pregnancy Due Date (PDD) is a crucial aspect of pregnancy management. It helps to determine when your baby is due to arrive,
+                      and can provide valuable information for planning your pregnancy and ensuring a healthy and safe outcome,
+                      So we use <u class="text-danger">Naegele’s Rule</u>:
+                    </h4>
+                    <h5 class="text-capitalize">the estimated delivery date (EDD) of a pregnancy : </h5>
+                    <p>
+                      EDD = First day of last menstrual period (LMP) + 280 days.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="img">
+                <div class="img-pdd"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>
+        <a href="index.html" class="back_home">
+           < Back to Home
+        </a>
+      </span>
+    </section> 
+
+    <!-- <section class="pdd m-4">
+      <div class="container">
+        <h1>Calculate Pregnancy Due Date </h1>
+        <div class="inputs">
+          <label class="p-2 w-50" for="datePDD">First Day of Last Menstrual Period</label>
+          <input type="date" class="form-control w-25" id="datePDD" />
+          <button class="btn btn-primary my-4 d-block" onclick="calcDueDate()">
+            Calculate
+          </button>
+          <p id="pdd"></p>
+          <div class="explainEQU">
+            <h4>
+              Pregnancy Due Date (PDD) is a crucial aspect of pregnancy management. It helps to determine when your baby is due to arrive,
+              and can provide valuable information for planning your pregnancy and ensuring a healthy and safe outcome,
+               So we use <u class="text-danger">Naegele’s Rule</u>:
+            </h4>
+            <h5 class="text-capitalize">the estimated delivery date (EDD) of a pregnancy : </h5>
+            <p>
+              EDD = First day of last menstrual period (LMP) + 280 days
+            </p>
+            
+          </div>
+      </div>
+    </section> -->
+    <!-- End Pregnancy Due Date -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
